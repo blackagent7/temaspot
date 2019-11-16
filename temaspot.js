@@ -1,5 +1,28 @@
-var link_aktif = '';
-var notif_aktif = 'Untuk Mengaktifkan Lisense Anda, Kontak kami https://www.temaspot.com';
+var text_phone = '6281977094280',
+	text_wa = 'Halo.. Saya mau beli ',
+	text_email = 'rioblanter@gmail.com',
+	text_mailsubject = 'Info Pembelian ',
+	text_mailbody = 'Halo.. Saya mau beli ',
+    text_nowish = 'Tidak ada Produk',
+	text_hapus = '<i class="far fa-trash-alt"></i>',
+    text_subtotal = 'Sub-Total';
+var wa_jumlah = 'Jumlah',
+	wa_nama = 'Nama',
+	wa_metode = 'Metode Pembayaran',
+	wa_alamat = 'Alamat Pengiriman',
+	wa_catatan = 'Catatan',
+    wa_last ='Link Produk';
+// Pengaturan Lainnya
+var load_more = 'Lihat Produk Lainnya',
+	loading_text = 'Loading...',
+	all_post_show = 'All Post Show',
+	error_text = 'Error Loading Feed',
+	disqus_shortname = 'blantertokoshop',
+	css1 = 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', // CSS Font Awesome
+	css2 = 'https://fonts.googleapis.com/icon?family=Material+Icons', // CSS Material Icons
+	css3 = 'https://fonts.googleapis.com/css?family=Farro'; // CSS Farro
+var link_aktif = 'https://www.idblanter.com/';
+var notif_aktif = 'Activate Templates, Contact https://www.idblanter.com';
 var _0xf27b = ["innerHTML", "checkout-box", "getElementById", "ck", "getItem", "sub2", "Rp. 0", "text", "#sub-total b", "#pilihan-1 option[value=\"default\"]", "#pilihan-2 option[value=\"default\"]", "", "join", "reverse", "split", "length", "substr", ".", "Rp. ", "https://web.whatsapp.com/send", "&text=", "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=", "&subject=", "&body=", "userAgent", "test", "whatsapp://send", "mailto:", "?cc=", "&bcc=", "click", ".captchaid", "alamat", "value", ".harga-s b", "#title", "jumlah", "defaultValue", "#pilihan-1 :selected", "#pilihan-2 :selected", "product-desc", "nama", "telepon", "#pembayaran :selected", "kota", "kodepos", "href", "location", "?phone=", "*", "*%0A%0A", "* : ", "%0A", "=============== %0A", " (", ") %0A", ", ", "%0A%0A", " : ", "walink", "emaillink", "aktif", "toggleClass", "span.box-captcha,.notif-captcha", "gagal", "on", "#next_order", "#order-wrapper", ".jumlah-s b", ".warna-s b", ".ukuran-s b", ".select-1", ".select-2", ".produk-wrap #harga", "replace", ".produk-wrap #go-cart", "src", "gambar", "#harga", "#cart-num", "1", "no-product", "cart-num", "<div class=\"product-cart\" id=\"produk", "\"><img src=\"", "\"><a href=\"", "\">", "</a><sp>%0A</sp><div class=\"harga\">", "</div><sp>%0A</sp>Jumlah : <b>", "</b><sp>%0A</sp><div class=\"varian1\">", " : <b>", "</b></div><sp>%0A</sp><div class=\"varian2\">", "</b></div><sp>%0A</sp><div class=\"catatan\">", "</b></div><sp>%0A====================%0A</sp><a id=\"hapus\" class=\"hapus\" href=\"javascript:void\" onclick=\"hapus(),getElementById(`produk", "`).remove();hapus2()\">", "</a></div>", ".addtowish", "setItem", "DOMContentLoaded", "addEventListener", ".product-cart", ".stok-habis", "0", "<span id=\"no-product\">", "</span>", "stokhabis", ".produk-wrap .pilihan", ".captchaid2", "#checkout-box .product-cart", "#get-checkout", "remove", ".product-cart #hapus", "hide", ".varian1,.varian2,.catatan", "none", "removeClass", ".pemesanan,.order-button", ".harga", "children", "parent", ".hapus"];
 document[_0xf27b[2]](_0xf27b[1])[_0xf27b[0]] = localStorage[_0xf27b[4]](_0xf27b[3]);
 if (localStorage[_0xf27b[4]](_0xf27b[5]) === null) {
@@ -175,7 +198,39 @@ function hapus() {
         })
     } else {}
 }
-
+var _0x56e2 = ['wpMuQSEcw73DscKASA==', 'ZTN0L0nChMK+', 'BcOhwrDCgsO/w6MwTjTDo8O0', 'ZCN7LVrCj8KKXMOwwoQ=', 'EsOmwr7CicO3w7QWTA==', 'DcKMw6jDtjLDlkR5w6dS', 'wofCp8OtaFfCpsK/w6LDrsKgw64kUcKfwp0W', 'w5/CmCHCv8OxZ8OYwo5FwoJT', 'P8OdPMKXwqc=', 'wofCp8OtaFfCpsK/w6LDrsKgw64kUcKfwoQTw7jCn8OEwrsCwqlQFg==', 'wqN2wo7DlsOIw77CicOLwp3CikNLwr8=', 'bUEWw4nDuiNxwpjDnMKMBcKOwrYLwrZyUMKpY8Kjw44=', 'wpA4E8OmUQ==', 'wo/ChyTCssOwVsOawoxMwpsaH8OdwqnCssKew4xyw700eUA=', 'FljClE/CkMO6w4DDoMKdwpNy', 'wqLCr8OsVsOY', 'wp88FcOiVsKW', 'Ok3CscKjUTAZwq7DscKQJA==', 'wpbCowLChArDnloqFQ==', 'w5IgAsOuRcKZw4ZywrTChcOWw6UEwpEP', 'wqvCisO/woDDkQ4HD2osw6U=', 'wozDhgjDtMOFIxvDhg0aKMKZwpY=', 'cE7Cs8O4ExYpFsKXw6IY', 'w58xC8OuWcKOw4ttwrvCnsOHw74Lw5xNOHTDlCvCqionwr9Sw70=', 'NwzDlMKAwrUgHG0RwrzDiAh7BHjCr8O3UA==', 'M8OSwrPDpcKbCGfCosOvw4bDmBN1w57DpRJtw4TDrmbDkMOQRSorwp7Cm20Nw4nDiFDDhVgaw6MIw4Fyw5nDgMO9woDClRXCuQzCrWJFw5vDvw==', 'wrfDoTtmYMORLWNQ', 'w54qAz8aw6HDqsKNVkXCiBbDug==', 'G1/Ck0fCgMO9w4rDgMKdwpNzw5jDqcO0EcKNUw==', 'Ym7DnWnClMOnwos=', 'NcKHZFHCg8OKFMOjwoUVwofDkMKpBQjCuCUYw5fDisK6Oj7Ctg==', 'wpPCoHY2V8OZw6w5wrQEdw==', 'wpw1GCA=', 'FMOvwrTCjQ==', 'w4DDvMKRwobCnB0cw7XDtwJfw47CncKtw7M/', 'e8OQwq/DvA==', 'w63DvTRue8OZ', 'YndJV0cbw45tacO9Sg==', 'aMOow5nDm8O/F8KZSsON', 'wozDhgjDtMOFIxvDhg0bKMKIwok=', 'fMKfwr/DqcKEGSTCocKrw4HDmA==', 'aiPCmVzDtcKxwolGw4Mswrxgwq4N', 'wqbCohYzwoLCrk7Dq8OeHMO0w4Q=', 'woPDqcKQwoPDhBMRw6bCtBRVw4Q=', 'wqjCk8K9w4RjwqjCn8Kdw4XCpw8sw5Rg', 'P1rCosOvFgECH8Kaw6EL', 'w7TDvTFge8OZb3xQccKu', 'ZCN3LkLCi8K9X8Ol', 'wr7Cq8O7RcOA', 'bsKfw5xGw6k=', 'wqnCmsKsw7l8wqHCm8Kcw47CoQ==', 'FRsCbw3DscK3YMKaw6xf', 'QzvDo8KjwooTHVdvw4PDuytaOlHDicOOf0TDlcKqRcOFwp4EfT3DrTsaPQojMC/CtUrDolfDtMKewpbCgcO2wpPChzFgwodSwrbDgcOow7B/w58+U8OkwpzDmMOCK8OVw48=', 'w7fCni8xwojCm8OywqXCvcOe', 'L3hHSmED', 'AUHCt8OzKxEz', 'w5XCuSNmH8K7w6I=', 'w4TDlgvDuMOoPx/DhmMXLcKf', 'F8OxwofDjcOWfSRFNMK1w4dX', 'ecOUwr/Dp8KSCA==', 'HFYCYxvDqcKEaMKVw71Ew58rw5o=', 'w6HCl8O5worDlCkHFmw=', 'SQvCmsKIwrg5w4BswqNTwo7CjGzDkkrCol5Twrx8dQ==', 'IsKqMMK2ccKbw6zDsMOvwoYNMcK0', 'w6rDpcKKw4lGwrcuU1pMVw==', 'CRsHw5nCslxVw5g6w4nCvMK4ZBfDjMKcMcKAwp/DmcOffW3CrcOpwrNLOmjClxcXJcKxw4XCg19SwpzChMKOLH8eZQHDnsO/eTpfYGzCocOGLWXCtsOIU0ouw7fCncKjBsKNwrzDscOKwqrCrsOPXsK5c8OZw7fCr04sJCZadlwSwobCqsKaHxLCmMO0bxYiw6DDu3XCucOucMKSE8Oow7HCjcOSw5DDuMKmVsK/wp0uwpNdwotpwrXChlrDuW8BeMOdw7QyR18ua8O/NsK0BcOMw61YNMKgZUZqw7TCp8ORw6dXwrR6w6rDscKXZyzDi8KrJzwOwoZwbsK4T8ONw4I4agozw4c+EjPCiRFawqLDi8KqI8OsZcKywqkHF8O1BMOkBy9zOEQRwpNywr0TwoxofEYKw4DDslEUwrjCnDTDhS3CqV/DmcKjVDHCgcOYwqvCtx3Cj8KIeWpdXMKfZsOLfjfCl0rDgcK1w7vDriUcL0tDw6sJw77DgcK4OxfDoDPCusKVCMKUG8KQwqYQwo/CkXbCmxTCscO2JcOwFn7ClkhdOh/DsWnDlsKVWcOzwojDmcOfwpLCisOXw54JwonCl1wTw4XCojjDpCvDp8K/wpdvb8KvwoBmUXLDksKFd8KCw4kNw5bDmCbDnA==', 'CUcDwp7Dokobwpo6wobCocK1PxjDg8KaJ8KLwoXCh8OXOG3CrsOpwrpVLyXDh1ICasO3w4zClgQJwpLDiMOZNTUGNA==', 'YTR/Nkk=', 'MMOeNsKVwrjDq8KyLA==', 'w5XCuSlmFcK8w5BFw40=', 'eGLCoF8mQsKTw57Ci8KRP8OsOU4=', 'w4HCl8OxwobDiBQWC0ssw79lw5LCoA==', 'OF/CvMOpDAwuGQ==', 'CsO7w5RZZyLDgg==', 'MsO+w4nDgA==', 'DxjCu8Oswow=', 'wrHCrsOp', 'eknCtcKxRhkCwrDDoA==', 'wrPCpsOsQcOSJsOMw7fCpg==', 'w4bDjRI=', 'wpIzw7k6w4g=', 'woE8FMO7', 'OHFUX0UD', 'Zi3DiWDCjcOwwos=', 'w6FrwoHDl8ODw6k=', 'w6FjwpbDmsOew77CisOK', 'XcKWwqLDvz3ChQ9gw6oIb8ObBcKVEDnDjRPDqAbDh8KZw7FJwo4=', 'wqrDv0ZzwoLCu3DDqsKS', 'wolrdUVZwqLDj8KIwoLDlhrCscKUFMK8w5PDmMOK', 'wqrChMK7w659', 'w5nCvwvCjxjDlw==', 'M8OfNsKYwqXDocK2', 'w5PCuRjCmAnDsFctDMOi', 'wpR8dkU=', 'OsKxM8KtZsKhw73DucKnwpYaLMKpw73DisK4AzTCuXtoZg==', 'cFrCvcO5DBY=', 'ODZ5MVg=', 'wqbCoBQ/wpnCpGPDtw==', 'Gwkdw4PCtlYZ', 'w7vClCQmwqjCgA==', 'w4Maw7tt', 'dkPCsg==', 'RcO8wpDDgMKCGXnChMKnw4PDhQRjw4s=', 'M8OfOcKbwq3Dpg==', 'w6bDgcOjw6c7w6TDo8KPdm48w4g=', 'OynCjg==', 'ExzCv8O2', 'IMK6O8Kg', 'NwnDkQfDsQ==', 'wozDo8Kawo8=', 'KADDhADDp2HDqk9f', 'w5PCsSFwAsKAw4xtw6hTMGo=', 'w7XDgsOkw7Imw6jDtcKNS2U=', 'wp7DlxTDtMOFdx3DmEELOsOHw5/CiMK0wpI+AcOtaMKwWT0bWcO8w6QQcsO9w5QSw7lUdA==', 'woU2w6g3w5/DgsOvwoMTw4pBw6o=', 'woI2E8ObXsKXw4twwqDChQ==', 'M8KRw5lNw6toFhMqA8O7', 'aMOrw57Dh8O8ZcKTUsOWwrXDqA==', 'worCqMOkaUXCpsKtw6/DqMKrw6g=', 'X8OswrvCisO0wqsDQzLDtcO1wrYbXsKXYg3CiMOaw7I4wog=', 'wqjDhcKww7Q4w6vDo8KZHykuw48tQsOxcMKRHCnDvFR/EcOwCyDCtEbChsK7w59iGCkvLjV1w47CmcO6wocsYxZJwrV+wpTCj0xQw7l4CATDi8OoOFjDnMOswrHDvGrDncKrwrPCnlDDiCoONsKIwqwAwrnDrw==', 'JyLCtA8=', 'KsKHeFnCicKPGsOqwooTw5TCgcOiTxrCuShZw4TDh8KjJDXDscOYOsO4Rz54w61xJ3RmYMKhF8Oow5YnfTzCiAbDqg==', 'w7fDrHDDr8KcHRk=', 'w7PChcK5w6Bhw63CkcKUw4rCoD5owr9uwr8kImDDrwA1wozDrnk=', 'NcOqw5J7w4/DjcOLwqnCjMKGwpDCin5wVxPDtErDgULDmkNqVsKBwrNvwqkIw5XCisOcwrbDj8Kjw5zCpytSJA==', 'FMKwOsKjZMKtwqnDjMOrwoIcfsKVw6HDg8OwFGDCkWF+IhtcwoLClA==', 'HzDCq8K3wrVnwpwiw7k=', 'RhfDj8KSw6QZLGpew73DjwE=', 'w5fCjMOjwonCniIGC3sgw6lv', 'w6F1wpLDk8OV', 'wo8kGCcNw6HCvsOEQl3CgxvDu0rDjcKXOgo3', 'PcOmwp/Dl8OnJsKPU8OQwqXDucOKwqdQwqEnN8KDw5rDhMOAw4fDkMK8w67CgCTDsCvDkTIH', 'wo3Do8KQwoXChh0Y', 'Vgcdw5PCsVUO', 'esKbbw==', 'w4LCsRjChQ==', 'w6zCnMO1wprDgQ==', 'RSJ4w4Q=', 'KWJUV1I=', 'NsKnNsKheMK8w6DDs8Ok', 'wrJdaj0F', 'w4/CmybCqMO7X8OS', 'w4DCmy8=', 'w4HDiwrDpsOEOxs=', 'bkTCpsKs', 'dSl4MUPChsKu', 'bcOuwpBtw4Q=', 'KiPChUvDv8Kvw4E=', 'w7DDvDVm', 'HwPCtMOrwoYCwoc=', 'wqNdeTES', 'woU1w6Mlw4LDusOj', 'wqrCjsKqw6R/wrnCm8KXw4U=', 'b3UOdsOqJUk=', 'w4jCpSZgAg==', 'wrzDucKYw4hXwqg=', 'wo3Do8KQwoLCjB8Jw7Q=', 'w5PCuQTCjw==', 'f8OSOsKZwqHDp8KzNgBZw74=', 'bVYfw5PDtTR1wo3DgcKQ', 'LWBWXU4Tw79d', 'cE7Ct8O5ExcoB8KAw6RCwpbDgMKWHWRp', 'wrzDpMKKwppFwqwySVBO', 'wqXDvsKBw5E=', 'EsO8wrLChMOnw6M2TjDDvcOiw7UA', 'FcOhwrTCkMO+w6MdVg==', 'PVEIw4nDrjI=', 'w77DtydMe8OZL3Rba8KowpTDh8Kww5PClFVuwoB4', 'w6vDtz8=', 'ZTJvLknCmcKjTcOhwoI=', 'Uw8LbA==', 'w7nDgcO0w741', 'w5rCvgbCkl3Diw==', 'w6HCrwk5woPCv1PDocOKF8Ojw5M=', 'RQkBw4XCsE0lwpQww4M=', 'wpwtAA==', 'woo7w7cv', 'B8OAw4PDocODLgRMI8O3w652KXHDncKWw7RuCMOcwpvClw==', 'VxgAbQHDqg==', 'GTHCrQ==', 'wrTCq8O5U8KMG8Ofw7k=', 'K3VSeVQDw5lbbsOlUcOa', 'w5LCtR7CqRLDhlEgCcOoNXRpw4PCqirCrgRGw7vCrw==', 'w4DDixDDocOEOg==', 'wo8oCzoL', 'wpI1w70=', 'wpg9CcOqRcKyw4t2wrLCmcOH', 'WBEHbxvDtsKTbMKXw65Fw40=', 'BcKKwrHDqz7DgAJ4w44XecKLQsKdDQ==', 'woo/w6si', 'w5zCvgTCjg/DpFYgFMOu', 'eg7DksKRwrIyHm1Zw6bDgw==', 'fMKXw5Fnw7ogCAgVHsO7GcKED8OWbQ==', 'w4PDkBDDtMOIPzvDgkUWPQ==', 'wqPCmcKow6U=', 'w7vCoggzwp3Cpw==', 'w5nCvwvCjxTDnl4jBQ==', 'GMOjwrDCvsO3w6cHQ3jDo8O1w7gp', 'N8Ouw5TDhsOxG8KZS8OHwrPDrsORwrpjw6Vp', 'w5vCnSzCr8O8', 'DsOxw5xaZjg=', 'YUFNwpLCsyUz', 'Y1FV', 'ZMKReFTChsOMHA==', 'wrVMeTEMw4R4wrdg', 'Y28UYMO3AUnCucKfwotO', 'TsODw5vDi8OOPzZELMO3w7hGOVPDnQ==', 'LXRCe0wWw5hB', 'wqLCr8OgXcOXDcOuw7bCoibDrg=='];
+(function (_0x14346, _0x4d6411) {
+    var _0x3c8dc3 = function (_0x536c89) {
+        while (--_0x536c89) {
+            _0x14346['push'](_0x14346['shift']());
+        }
+    };
+    _0x3c8dc3(++_0x4d6411);
+}(_0x56e2, 0x82));
+var _0x356c = function (_0x3bf22f, _0x4bf802) {
+    _0x3bf22f = _0x3bf22f - 0x0;
+    var _0x46aa7f = _0x56e2[_0x3bf22f];
+    if (_0x356c['VwuodI'] === undefined) {
+        (function () {
+            var _0x598888 = function () {
+                var _0x3f3b47;
+                try {
+                    _0x3f3b47 = Function('return (function() ' + '{}.constructor(\"return this\")( )' + ');')();
+                } catch (_0x10b86c) {
+                    _0x3f3b47 = window;
+                }
+                return _0x3f3b47;
+            };
+            var _0x1feaa6 = _0x598888();
+            var _0x4c9a6e = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+            _0x1feaa6['atob'] || (_0x1feaa6['atob'] = function (_0x160cc2) {
+                var _0x40b537 = String(_0x160cc2)['replace'](/=+$/, '');
+                for (var _0x48945d = 0x0, _0x957fb7, _0x22fb99, _0x9efa20 = 0x0, _0x408679 = ''; _0x22fb99 = _0x40b537['charAt'](_0x9efa20++); ~_0x22fb99 && (_0x957fb7 = _0x48945d % 0x4 ? _0x957fb7 * 0x40 + _0x22fb99 : _0x22fb99, _0x48945d++ % 0x4) ? _0x408679 += String['fromCharCode'](0xff & _0x957fb7 >> (-0x2 * _0x48945d & 0x6)) : 0x0) {
+                    _0x22fb99 = _0x4c9a6e['indexOf'](_0x22fb99);
+                }
+                return _0x408679;
+            });
+        }());
         var _0x33004e = function (_0x5657b7, _0x4bf802) {
             var _0x53afb5 = [],
                 _0x4ce14e = 0x0,
